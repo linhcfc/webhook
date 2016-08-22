@@ -1,4 +1,4 @@
-<script>
+
 	app.get('/webhook', function (req, res) {
 		if (req.query['hub.verify_token'] === 'EAAGvt24xKoMBACFY869cLavzAMbC71KwfpH6Oj5y0eHIL79fllPyCQ3vgVKBijCXPet2D2HuxZBfKZCe2ur3upycSkY12UAHIe3KZBHer3b2BUqiooCi2ZCXpdqXsvVE7IZC3c82cA9lBtWWLNe56tw6QMZAZBfrM3QBpt6ggrKbQZDZD') {
 		  res.send(req.query['hub.challenge']);
@@ -6,4 +6,4 @@
 		  res.send('Error, wrong validation token');    
 		}
 	  });
-</script>
+
