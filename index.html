@@ -1,28 +1,94 @@
-<script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '474677339302531',
-          xfbml      : true,
-          version    : 'v2.6'
-        });
-      };
- 
-      (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
- 
-    <div class="fb-page" 
-         data-href="https://www.facebook.com/yostoxmage2/" 
-         data-tabs="messages" 
-         data-width="400" 
-         data-height="300" 
-         data-small-header="true">
-      <div class="fb-xfbml-parse-ignore">
-        <blockquote></blockquote>
+<div id="b-c-facebook" class="chat_f_vt" style="display: block;">
+   <div id="chat-f-b" onclick="b_f_chat()" class="chat-f-b">
+      <img class="chat-logo" src="https://ninjateam.org/wp-content/plugins/facebook-live-chat/images/facebook.png" alt="logo chat">
+      <label>
+      Facebook Chat Support		</label>
+      <span id="fb_alert_num" style="display: block;">
+      1
+      </span>
+      <div id="t_f_chat">
+         <a title="Close Chat" href="javascript:;" onclick="chat_f_close()" id="chat_f_close" class="chat-left-5"><img src="https://ninjateam.org/wp-content/plugins/facebook-live-chat/images/close.png" alt="Close chat" title="Close chat"></a>
       </div>
-    </div>
+   </div>
+   <div id="f-chat-conent" class="f-chat-conent" style="display: block;">
+      <div class="fb-page fb_iframe_widget" data-tabs="messages" data-href="https://www.facebook.com/ninjateam.org" data-width="250" data-height="310" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=0&amp;height=310&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fninjateam.org&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=true&amp;small_header=true&amp;tabs=messages&amp;width=250"><span style="vertical-align: bottom; width: 250px; height: 310px;"><iframe name="f20858e75666e" width="250px" height="310px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df22a14d1779fc1c%26domain%3Dninjateam.org%26origin%3Dhttps%253A%252F%252Fninjateam.org%252Ff382cbcf490445c%26relation%3Dparent.parent&amp;container_width=0&amp;height=310&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fninjateam.org&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=true&amp;small_header=true&amp;tabs=messages&amp;width=250" style="border: none; visibility: visible; width: 250px; height: 310px;" class=""></iframe></span></div>
+      <div id="fb_chat_start" style="display: block;">
+         <div id="f_enter_1" class="msg_b fb_hide" style="display: block;">
+            Hello! Thanks for visiting us. Please press Start button to chat with our support :)			
+         </div>
+         <p id="f_enter_3" class="fb_hide" align="center" style="display: block;">
+            <a href="javascript:;" onclick="f_bt_start_chat()" id="f_bt_start_chat">Start</a>
+         </p>
+      </div>
+   </div>
+</div>
+<style>
+#b-c-facebook {
+    bottom: 0;
+    z-index: 9999999999;
+    width: 250px;
+    height: auto;
+    max-height: 375px;
+    min-height: 38px;
+    box-shadow: 2px 6px 6px 6px rgba(0, 0, 0, 0.09);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
+.chat_f_vt {
+    position: fixed;
+    right: 10px;
+	vertical-align: baseline;
+}
+#b-c-facebook .chat-f-b {
+    float: left;
+    padding: 0 25px;
+    padding-left: 15px;
+    width: 250px;
+    color: #fff;
+    height: 38px;
+    line-height: 38px;
+    background-color: #3a5897;
+    border: 0;
+    z-index: 9999999;
+    margin-right: 12px;
+}
+#b-c-facebook .chat-f-b, #b-c-facebook .chat-f-b label {
+    line-height: 20px;
+    margin: 0px;
+    cursor: pointer;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+}
+#b-c-facebook .chat-f-b, #chat_f_b_smal {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: 0 0;
+    text-decoration: none;
+}
+img, a img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    image-rendering: optimizeQuality;
+}
+#chat-f-b img.chat-logo {
+    padding-right: 15px;
+    max-width: 50px;
+    max-height: 50px;
+}
+#chat-f-b img.chat-logo {
+    margin-top: 9px;
+}
+#b-c-facebook .chat-f-b label {
+    position: absolute;
+    top: 10px;
+}
+#b-c-facebook .chat-f-b label {
+    width: 160px;
+}
+</style>
